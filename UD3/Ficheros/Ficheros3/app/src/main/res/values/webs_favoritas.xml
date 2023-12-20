@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="webs_favoritas">
+        <item>Google;https://www.google.com;logo1;1</item>
+        <item>Bing;https://www.bing.com;logo2;2</item>
+    </string-array>
+</resources>

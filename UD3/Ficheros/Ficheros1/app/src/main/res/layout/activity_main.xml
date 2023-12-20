@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/titulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ARCHIVOS INTERNOS:" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo1"
+            android:hint="Escribe aquí"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:text="Añadir contenido interno"
+            android:onClick="addContent"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addButton"
+            android:text="Borrar archivo interno"
+            android:onClick="deleteFile"/>
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteButton"
+            android:text="Ver contenido interno"
+            android:onClick="viewContent"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewButton"
+            android:text="Contenido del archivo interno aparecerá aquí" />
+
+        <TextView
+            android:id="@+id/titulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="40dp"
+            android:text="ARCHIVOS EXTERNOS:" />
+
+        <EditText
+            android:id="@+id/editTextE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo2"
+            android:hint="Escribe aquí"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextE"
+            android:text="Guardar texto externo"
+            android:onClick="saveText" />
+
+        <Button
+            android:id="@+id/deleteButtonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton"
+            android:text="Borrar archivo externo"
+            android:onClick="deleteFileE" />
+
+        <Button
+            android:id="@+id/readButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deleteButtonE"
+            android:text="Leer archivo externo"
+            android:onClick="readFile" />
+
+        <TextView
+            android:id="@+id/textViewE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/readButton"
+            android:text="Contenido del archivo externo aparecerá aquí" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar contenido del archivo recursos"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/textViewE"/>
+
+        <TextView
+            android:id="@+id/textViewR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+
+            android:text="Contenido del archivo recursos aparecerá aquí" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Para agregar un libro -->
+        <EditText
+            android:id="@+id/codLibro"
+            android:hint="Código del Libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/tituloLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título del Libro"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/autorLibro"
+            android:hint="Autor del Libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAgregarLibro"
+            android:text="Agregar Libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Para agregar un usuario -->
+        <EditText
+            android:id="@+id/idUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del Usuario"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/nombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Usuario"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnAgregarUsuario"
+            android:text="Agregar Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Para prestar un libro -->
+        <Button
+            android:id="@+id/btnPrestarLibro"
+            android:text="Prestar Libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Para eliminar un libro -->
+        <Button
+            android:id="@+id/btnEliminarLibro"
+            android:text="Eliminar Libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Para mostrar los libros -->
+        <Button
+            android:id="@+id/btnMostrarLibros"
+            android:text="Mostrar Libros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listaLibros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Para mostrar los usuarios -->
+        <Button
+            android:id="@+id/btnMostrarUsuarios"
+            android:text="Mostrar Usuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listaUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
